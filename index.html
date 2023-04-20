@@ -5,8 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -27,21 +29,16 @@
           <li><a href="#">External</a></li>
         </ul>
       </nav>
-      <div class="parallax">
-        <div class="parallax__background"></div>
-        <div class="parallax__content">
-          <div id="section1">
-            <section class="hero">
-              <h1>DERVELOPMENT</h1>
-              <h4>Showcasing the work of The Der</h4>
-            </section>
-          </div>
+      <section id="section1">
+        <div class="hero">
+          <h1>DERVELOPMENT</h1>
+          <h4>Showcasing the work of The Der</h4>
         </div>
-      </div>
+      </section>
 
       <!-- Start Feature Area -->
-      <div id="section2">
-        <section class="feature-area" class="about-section">
+      <section id="section2">
+        <div class="feature-area" class="about-section">
           <div class="feature-content">
             <img src="./images/_MG_0922.jpg" alt="Train" />
             <h2 class="feature-content-title green-text">Gallery</h2>
@@ -66,11 +63,11 @@
             </p>
             <a href="#" class="button">Button Red</a>
           </div>
-        </section>
+        </div>
         <!-- End Feature Area -->
 
         <!-- Start Blog Area -->
-        <section id="blog-area">
+        <div id="blog-area">
           <div class="blog-content">
             <img src="./images/IMG_7444.jpg" alt="Image" />
             <h2>Two Column Left Side</h2>
@@ -85,28 +82,27 @@
             ><br />
             <p id="blofr"></p>
           </div>
-        </section>
-      </div>
-      <!-- End Blog Area -->
+        </div>
+        <!-- End Blog Area -->
+      </section>
+      <!-- End Feature Area -->
 
+      <!-- Start Section 3 -->
       <!-- Start Services Area -->
-      <div id="section3">
-        <section id="services-area" class="services-section">
-          <div class="service">
-            <h1>Our Services</h1>
-            <p>
-              Nunc diam leo, fringilla vulputate elit lobortis, consectetur
-              vestibulum quam. Sed id <br />
-              felis ligula. In euismod libero at magna dapibus, in rutrum velit
-              lacinia. <br />
-              Etiam a mi quis arcu varius condimentum.
-            </p>
-          </div>
-        </section>
+      <section id="section3">
+        <div class="services-area" class="services-section">
+          <h1>Our Services</h1>
+          <p>
+            This is an example of the area that would describe our services.
+            <br />
+            felis ligula. In euismod libero at magna dapibus, in rutrum.
+            <br />
+          </p>
+        </div>
         <!-- End Services Area -->
 
         <!-- Start Testimornial Area -->
-        <section class="testimornial-area">
+        <div class="testimornial-area">
           <div class="four-columns">
             <div class="testimonial-content">
               <img src="img/4-1.jpg" alt="Image" />
@@ -157,9 +153,14 @@
           </div>
           <!-- End Four Columns -->
 
+          <!-- Start Big Column -->
           <div class="big-column">
-            <img src="img/4-5.jpg" alt="Image" class="img-responsive" />
-            <div class="tm-box-description">
+            <img
+              src="./images/IMG_7444.jpg"
+              alt="Image"
+              class="img-responsive"
+            />
+            <div class="big-column-text">
               <h2>One Big Column</h2>
               <p class="tm-box-p">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
@@ -185,13 +186,13 @@
               <a href="#" class="content-link">Read More</a>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- End Testimornial Area -->
 
       <!-- Start Contact Area -->
-      <div id="section4">
-        <section id="contact-area" class="contact-section">
+      <section id="section4">
+        <div id="contact-area" class="contact-section">
           <div class="contact-content">
             <h1>contact form</h1>
             <div class="row">
@@ -239,12 +240,11 @@
               <button type="submit" class="btn btn-default">Send</button>
             </div>
           </form>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- End Contact Area -->
     </main>
 
-    <!-- Start Footer Area -->
     <footer id="footer-area">
       <div class="footer-content">
         <h1>Use it free!</h1>
@@ -258,7 +258,6 @@
         <p class="copy">Copyright © 2023 DERVELOPMENT | Design: The Der</p>
       </div>
     </footer>
-    <!-- End Footer Area -->
   </body>
   <script src="index.js"></script>
 </html>

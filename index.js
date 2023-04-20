@@ -12,3 +12,11 @@ window.onscroll = function () {
     navbar.classList.remove("sticky");
   }
 };
+
+// window.addEventListener("scroll", function () {
+//   const parallax = document.querySelector(".parallax");
+//   let scrollPosition = window.pageYOffset;
+//   parallax.querySelector(
+//     ".parallax__background"
+//   ).style.transform = `translateY(${scrollPosition * 0.5}px)`;
+// });

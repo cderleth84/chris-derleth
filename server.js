@@ -2,11 +2,11 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-// app.use(express.static("../dervelopment"));
+app.use(express.static("../dervelopment"));
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
-});
+// app.get("/", (req, res) => {
+// res.sendFile(__dirname + "/index.html");
+// });
 
 // Use this when wanting to get different website pages
 // app.use("/", express.static(path.join(__dirname + "dervelopment")));

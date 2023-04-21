@@ -3,6 +3,11 @@ const path = require("path");
 const app = express();
 
 app.use(express.static("../dervelopment"));
+
+// Use this when wanting to get different website pages
+// app.use("/", express.static(path.join(__dirname + "dervelopment")));
+
+// Use this when serving files from a different directory
 // app.use(express.static(path.join(__dirname, "dervelopment")));
 
 // 404 Error Message

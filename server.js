@@ -5,7 +5,7 @@ const app = express();
 // app.use(express.static("../dervelopment"));
 
 app.get("/", (req, res) => {
-  res.send("/index.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 // Use this when wanting to get different website pages

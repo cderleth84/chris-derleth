@@ -1,7 +1,7 @@
 // Imports
 const express = require("express");
 const app = express();
-const path = require("node:path");
+const path = require("path");
 
 // Static Files
 // app.use(express.static("dervelopment"));

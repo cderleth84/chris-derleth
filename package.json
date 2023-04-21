@@ -1,11 +1,11 @@
 {
   "name": "dervelopment",
   "version": "1.0.0",
-  "description": "Portfolio Site",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/cderleth84/dervelopment#readme",
   "dependencies": {
-    "express": "^4.18.2",
     "nodemon": "^2.0.22"
   }
 }

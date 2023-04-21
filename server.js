@@ -4,17 +4,16 @@ const app = express();
 const path = require("path");
 
 // Static Files
-app.use(express.static("dervelopment"));
-app.use(express.static("public"));
-app.use(express.static("public/css"));
-app.use(express.static("public/img"));
+// app.use(express.static("dervelopment"));
+// app.use(express.static("public"));
+// app.use(express.static("public/css"));
+// app.use(express.static("public/img"));
 
 // Use this when wanting to get different website pages
 // app.use("/", express.static(path.join(__dirname + "dervelopment")));
 
 // Use this when serving files from a different directory
 // app.use(express.static(path.join(__dirname, "dervelopment")));
-
 app.use("/home", express.static(path.join(__dirname, "views")));
 app.use(express.static(path.join(__dirname, "public/css")));
 app.use(express.static(path.join(__dirname, "public/img")));
@@ -29,7 +28,7 @@ app.use(express.static(path.join(__dirname, "public/img")));
 //   res.send("Welcome to root URL of Server");
 // });
 
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 

@@ -1,3 +1,3 @@
-const fs = FileSystem();
+const { format } = require("date-fns");
 
-console.log(fs);
+console.log(format(new Date(), "yyyMMdd\tHH:mm:ss"));

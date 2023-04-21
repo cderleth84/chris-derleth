@@ -20,3 +20,12 @@ window.onscroll = function () {
 //     ".parallax__background"
 //   ).style.transform = `translateY(${scrollPosition * 0.5}px)`;
 // });
+
+function MyComponent() {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+      <input type="text" placeholder="Enter your name" />
+    </div>
+  );
+}

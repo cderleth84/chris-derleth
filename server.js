@@ -8,6 +8,7 @@ app.use(express.static("dervelopment"));
 app.use(express.static("public"));
 app.use(express.static("public/css"));
 app.use(express.static("public/img"));
+app.use(express.json());
 
 // Use this when wanting to get different website pages
 // app.use("/", express.static(path.join(__dirname + "dervelopment")));
@@ -29,14 +30,20 @@ app.get("/", (req, res) => {
   res.send("Welcome to root URL of Server");
 });
 
-app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
-  console.log(res.sendFile(__dirname + "/views/index.html"));
-});
+// app.get("/", (req, res) => {
+//   res.sendFile(__dirname + "/views/index.html");
+//   console.log(res.sendFile(__dirname + "/views/index.html"));
+// });
 
 app.get("/hello", (req, res) => {
   res.set("Content-Type", "text/html");
   res.status(200).send("<h1>Hello GFG Learner!</h1>");
+});
+
+app.post("/", (req, res) => {
+  const { name } = req.body;
+
+  res.send(`Welcome ${name}`);
 });
 
 // 404 Error Message

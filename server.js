@@ -15,10 +15,10 @@ app.use(express.static("public/img"));
 // Use this when serving files from a different directory
 // app.use(express.static(path.join(__dirname, "dervelopment")));
 
-// app.use(express.static(path.join(__dirname, "public")));
-// app.use(express.static(path.join(__dirname, "public/css")));
+app.use("/home", express.static(path.join(__dirname, "views")));
+app.use(express.static(path.join(__dirname, "public/css")));
+app.use(express.static(path.join(__dirname, "public/img")));
 // app.use(express.static(path.join(__dirname, "public/js")));
-// app.use(express.static(path.join(__dirname, "public/img")));
 
 // app.get("/", (req, res) => {
 //   res.sendFile(path.join(__dirname, "public/views/index.html"));

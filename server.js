@@ -24,15 +24,14 @@ app.use(express.static(path.join(__dirname, "public/img")));
 //   res.sendFile(path.join(__dirname, "public/views/index.html"));
 // });
 
-app.get("/", (req, res) => {
-  res.status(200);
-  res.send("Welcome to root URL of Server");
-});
-
 // app.get("/", (req, res) => {
-//   res.sendFile(__dirname + "/views/index.html");
-//   console.log(res.sendFile(__dirname + "/views/index.html"));
+//   res.status(200);
+//   res.send("Welcome to root URL of Server");
 // });
+
+app.get("/home", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
+});
 
 app.get("/hello", (req, res) => {
   res.set("Content-Type", "text/html");

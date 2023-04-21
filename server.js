@@ -1,12 +1,22 @@
+// Imports
 const express = require("express");
-const path = require("path");
 const app = express();
+const path = require("node:path");
 
-app.use(express.static("../dervelopment"));
+// Static Files
+// app.use(express.static("dervelopment"));
+// app.use(express.static("public"));
+// app.use(express.static("public/css"));
+// app.use(express.static("public/img"));
 
-// app.get("/", (req, res) => {
-// res.sendFile(__dirname + "/index.html");
-// });
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public/css")));
+app.use(express.static(path.join(__dirname, "public/js")));
+app.use(express.static(path.join(__dirname, "public/img")));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "/views/index.html"));
+});
 
 // Use this when wanting to get different website pages
 // app.use("/", express.static(path.join(__dirname + "dervelopment")));

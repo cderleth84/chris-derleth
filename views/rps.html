@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Your Choice: <span id="user-choice"></span></h2>
+    <h2>Computer Choice: <span id="computer-choice"></span></h2>
+    <h2>Result: <span id="result"></span></h2>
+
+    <button
+      class="rps-button"
+      id="rock"
+      onclick="playGame('Rock', computerChoice)"
+    >
+      rock
+    </button>
+    <button
+      class="rps-button"
+      id="paper"
+      onclick="playGame('Paper', computerChoice)"
+    >
+      paper
+    </button>
+    <button
+      class="rps-button"
+      id="scissors"
+      onclick="playGame('Scissors', computerChoice)"
+    >
+      scissors
+    </button>
+    <div>
+      <span><a href="../index.html">Back to Homepage</a></span>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -133,7 +133,7 @@ li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url("./images/_MG_4921-Edit.jpg");
+  background-image: url("/img/_MG_4921-Edit.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -304,7 +304,7 @@ li a {
 }
 
 .services-area::before {
-  background-image: url("./images/_MG_1555-HDR.jpg");
+  background-image: url("/img/_MG_1555-HDR.jpg");
   background-size: cover;
   content: "";
   background-position: center;
@@ -395,7 +395,7 @@ li a {
 }
 
 #contact-area::before {
-  background-image: url("./images/IMG_0249-HDR.jpg");
+  background-image: url("/img/IMG_0249-HDR.jpg");
   background-size: cover;
   background-position: center;
   content: "";

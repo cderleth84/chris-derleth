@@ -15,7 +15,7 @@ app.use(express.static("public/img"));
 // Use this when serving files from a different directory
 // app.use(express.static(path.join(__dirname, "dervelopment")));
 
-app.use("/home", express.static(path.join(__dirname, "views")));
+// app.use("/home", express.static(path.join(__dirname, "views")));
 app.use(express.static(path.join(__dirname, "public/css")));
 app.use(express.static(path.join(__dirname, "public/img")));
 // app.use(express.static(path.join(__dirname, "public/js")));
@@ -29,8 +29,12 @@ app.use(express.static(path.join(__dirname, "public/img")));
 //   res.send("Welcome to root URL of Server");
 // });
 
+// app.get("/home", (req, res) => {
+//   res.sendFile(__dirname + "/views/index.html");
+// });
+
 app.get("/home", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
+  res.send(__dirname + "/views/index.html");
 });
 
 app.get("/hello", (req, res) => {

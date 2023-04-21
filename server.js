@@ -34,6 +34,11 @@ app.get("/", (req, res) => {
   console.log(res.sendFile(__dirname + "/views/index.html"));
 });
 
+app.get("/hello", (req, res) => {
+  res.set("Content-Type", "text/html");
+  res.status(200).send("<h1>Hello GFG Learner!</h1>");
+});
+
 // 404 Error Message
 app.use((req, res) => {
   res.status(404);

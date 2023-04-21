@@ -451,7 +451,26 @@ p {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   max-width: 100vw;
+  font-weight: 200;
+  text-align: center;
+  padding: 50px;
+}
+
+footer h1 {
+  margin-bottom: 50px;
+}
+
+footer .footer-content {
+  margin: 20px;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  font-weight: 100;
+  font-size: 10px;
 }
 
 /* .sticky {

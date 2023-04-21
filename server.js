@@ -29,12 +29,8 @@ app.use(express.static(path.join(__dirname, "public/img")));
 //   res.send("Welcome to root URL of Server");
 // });
 
-// app.get("/home", (req, res) => {
-//   res.sendFile(__dirname + "/views/index.html");
-// });
-
-app.get("/home", (req, res) => {
-  res.send(__dirname + "/views/index.html");
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/index.html");
 });
 
 app.get("/hello", (req, res) => {

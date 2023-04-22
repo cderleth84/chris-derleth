@@ -30,7 +30,7 @@ app.get("/rps", (req, res) => {
   res.sendFile(__dirname + "/views/rps.html");
 });
 
-app.get("/galler", (req, res) => {
+app.get("/gallery", (req, res) => {
   res.sendFile(__dirname + "/gallery.html");
 });
 

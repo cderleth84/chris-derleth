@@ -7,19 +7,16 @@ const path = require("path");
 // Static Files
 // app.use(express.static("dervelopment"));
 // app.use(express.static("public"));
-app.use(express.static("public/css"));
-app.use(express.static("public/img"));
+// app.use(express.static("public/css"));
+// app.use(express.static("public/img"));
 
 // JSON Files
 app.use(express.json());
 
 // Use this when serving files from a different directory
-// app.use(express.static(path.join(__dirname, "public")));
-// app.use(express.static(path.join(__dirname, "views")));
-app.use(express.static(path.join(__dirname, "public/img")));
-
-const fullPathName = path.join(__dirname, "public/css");
-console.log(fullPathName);
+app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "views")));
+// app.use(express.static(path.join(__dirname, "public/img")));
 
 // app.get("/", (req, res) => {
 //   res.status(200);

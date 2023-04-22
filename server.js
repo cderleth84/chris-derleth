@@ -13,7 +13,6 @@ const path = require("path");
 // app.use("/", express.static(path.join(__dirname + "dervelopment")));
 
 // Use this when serving files from a different directory
-// app.use(express.static(path.join(__dirname, "dervelopment")));
 app.use(express.static(path.join(__dirname, "/public")));
 // app.use(express.static(path.join(__dirname, "views")));
 // app.use(express.static(path.join(__dirname, "public/css")));

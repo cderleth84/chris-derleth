@@ -1,4 +1,5 @@
 // Imports
+const { log } = require("console");
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -12,10 +13,13 @@ app.use(express.static("public/img"));
 // JSON Files
 app.use(express.json());
 
-app.use(express.static("dervelopment"));
 // Use this when serving files from a different directory
 // app.use(express.static(path.join(__dirname, "public")));
 // app.use(express.static(path.join(__dirname, "views")));
+app.use(express.static(path.join(__dirname, "public/img")));
+
+const fullPathName = path.join(__dirname, "public/css");
+console.log(fullPathName);
 
 // app.get("/", (req, res) => {
 //   res.status(200);

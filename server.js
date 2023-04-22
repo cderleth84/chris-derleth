@@ -12,15 +12,10 @@ const path = require("path");
 // JSON Files
 app.use(express.json());
 
-// Use this when wanting to get different website pages
-// app.use("/", express.static(path.join(__dirname + "dervelopment")));
-
+app.use(express.static("dervelopment"));
 // Use this when serving files from a different directory
 app.use(express.static(path.join(__dirname, "/public")));
 // app.use(express.static(path.join(__dirname, "views")));
-// app.use(express.static(path.join(__dirname, "public/css")));
-// app.use(express.static(path.join(__dirname, "public/img")));
-// app.use(express.static(path.join(__dirname, "public/js")));
 
 // app.get("/", (req, res) => {
 //   res.sendFile(path.join(__dirname, "public/views/index.html"));

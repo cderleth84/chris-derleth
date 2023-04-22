@@ -31,7 +31,7 @@ app.get("/rps", (req, res) => {
 });
 
 app.get("/gallery", (req, res) => {
-  res.sendFile(__dirname + "/gallery.html");
+  res.sendFile(__dirname + "/views/gallery.html");
 });
 
 // app.get("/hello", (req, res) => {

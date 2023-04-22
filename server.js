@@ -30,10 +30,14 @@ app.get("/rps", (req, res) => {
   res.sendFile(__dirname + "/views/rps.html");
 });
 
-app.get("/hello", (req, res) => {
-  res.set("Content-Type", "text/html");
-  res.status(200).send("<h1>Hello GFG Learner!</h1>");
+app.get("/galler", (req, res) => {
+  res.sendFile(__dirname + "/gallery.html");
 });
+
+// app.get("/hello", (req, res) => {
+//   res.set("Content-Type", "text/html");
+//   res.status(200).send("<h1>Hello GFG Learner!</h1>");
+// });
 
 app.post("/", (req, res) => {
   const { name } = req.body;

@@ -18,10 +18,6 @@ app.use(express.static(path.join(__dirname, "/public")));
 // app.use(express.static(path.join(__dirname, "views")));
 
 // app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "public/views/index.html"));
-// });
-
-// app.get("/", (req, res) => {
 //   res.status(200);
 //   res.send("Welcome to root URL of Server");
 // });

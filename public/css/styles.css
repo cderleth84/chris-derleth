@@ -244,7 +244,7 @@ li a {
   width: 100%;
   background-image: url("../img/_MG_1555-HDR.jpg");
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   /* margin: 0px; */
 }
@@ -359,7 +359,7 @@ li a {
   background-image: url("../img/monica-toner-oroFhZj_YA4-unsplash.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   width: 100%;
 }
 

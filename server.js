@@ -14,10 +14,11 @@ app.use(express.json());
 
 // Use this when serving files from a different directory
 app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "js")));
 // app.use(express.static(path.join(__dirname, "public/img")));
 // app.use(express.static(path.join(__dirname, "views")));
 
-const pathName = path.join(__dirname, "public/img");
+const pathName = path.join(__dirname, "/views/index.html");
 console.log(pathName);
 
 // app.get("/", (req, res) => {
@@ -26,7 +27,7 @@ console.log(pathName);
 // });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/views/index.html");
+  res.sendFile(path.join(__dirname, "/views/index.html"));
 });
 
 app.get("/rps", (req, res) => {

@@ -101,16 +101,11 @@ li a {
   justify-content: center;
   text-align: center;
   background-image: url("../img/_MG_4921-Edit.jpg");
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: calc(100vh - 75px);
-}
-
-.hero {
-  /* perspective: 1000px; */
-  /* transform-style: preserve-3d; */
 }
 
 #section1 h1 {
@@ -563,6 +558,8 @@ footer .copyright {
   }
 }
 
+/* ---------------------------------------------------------------- */
+
 @media screen and (min-width: 825px) and (max-width: 924px) {
   .feature-area {
     display: flex;
@@ -609,6 +606,8 @@ footer .copyright {
     margin-top: 30px;
   }
 }
+
+/* ---------------------------------------------------------------- */
 
 @media screen and (min-width: 550px) and (max-width: 824px) {
   #navbar ul {
@@ -743,6 +742,8 @@ footer .copyright {
   }
 }
 
+/* ---------------------------------------------------------------- */
+
 @media screen and (min-width: 700px) and (max-width: 724px) {
   li {
     list-style: none;
@@ -769,30 +770,45 @@ footer .copyright {
   }
 }
 
+/* ---------------------------------------------------------------- */
+
 @media screen and (max-width: 699px) {
   #navbar {
-    width: 50px;
-    height: 40px;
-    border-radius: 5px;
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    /* width: 50px; */
+    /* height: 40px; */
+    /* border-radius: 5px; */
+    /* position: fixed; */
+    /* top: 20px; */
+    /* left: 20px; */
     /* left: calc(90% - 50px); */
     /* top: 1% - 10px; */
     /* left: 90% - 10px; */
+    position: fixed;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
   }
 
   #navbar ul {
     display: none;
   }
 
+  #hamburger-whole {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-end; */
+  }
+
   #hamburger {
+    margin-right: 25px;
     /* display: flex;
     flex-direction: column; */
     display: inline-block;
     cursor: pointer;
     /* padding: 10px; */
     border-radius: 10px;
+    /* border: 2px solid black; */
   }
 
   #hamburger span {
@@ -806,7 +822,13 @@ footer .copyright {
     border-radius: 2px;
     z-index: 1;
   }
+
+  #section1 {
+    height: 100vh;
+  }
 }
+
+/* ---------------------------------------------------------------- */
 
 @media screen and (min-width: 400px) and (max-width: 549px) {
   .feature-area {
@@ -954,4 +976,106 @@ footer .copyright {
   }
 }
 
-/* ------------------------------------------------------------ */
+/* ---------------------------------------------------------------- */
+
+@media screen and (max-width: 399px) {
+  #section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../img/_MG_4921-Edit.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 75px);
+    /* width: 100%; */
+    margin-bottom: 50px;
+  }
+
+  #section1 h1 {
+    font-size: 10px;
+    font-weight: 200;
+    font-size: 3rem;
+  }
+
+  #section1 h4 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    /* margin: 0px; */
+    /* padding: 10px; */
+  }
+
+  #section2 {
+    padding: 0px;
+  }
+
+  .feature-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-content {
+    width: 100%;
+  }
+
+  .blog-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .blog-content {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  #section3 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .services-area {
+    max-width: 90%;
+  }
+
+  .testimonial-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .big-column-area {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .contact-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* ---------------------------------------------------------------- */
